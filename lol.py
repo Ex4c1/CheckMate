@@ -1,3 +1,6 @@
+__VERSION__ = 1.0.0
+__AUTHORS__ = "Ex4c && NICEA"
+
 import requests
 
 url = "https://insult.mattbas.org/api/"
@@ -12,5 +15,9 @@ def obtain_request(url,key,token_ssl):
 api_request_reponse = obtain_request(url,key,token_ssl)
 
 def create_menu():
-  
+  print('------------------')
+  print('|INSULT GENERATOR|')
+  print('------------------')
+  print('Choose Option:')
+  print('1. INSULT ME.\n2. INSULT ME LIKE BIATCH\n.INSULT ME LIKE BIATCH\n3. Exit:')
   
