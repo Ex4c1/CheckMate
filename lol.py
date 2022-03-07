@@ -30,8 +30,8 @@ def generate_insult(user_input,level_of_insult):
   for x in level_of_insult:
     api_request_reponse = obtain_request(url,key,token_ssl)
     json_output = json.load(api_requests_response.json())
-    insults_output.add(json_output)
-  
+    insult = json_output.get('insult')
+    insults_output.add(insult)
   return insults_output
 #===============| MAIN |===============#
 
