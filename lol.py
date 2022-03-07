@@ -19,5 +19,6 @@ def create_menu():
   print('|INSULT GENERATOR|')
   print('------------------')
   print('Choose Option:')
-  print('1. INSULT ME.\n2. INSULT ME LIKE BIATCH\n.INSULT ME LIKE BIATCH\n3. Exit:')
+  print('1. INSULT ME.\n2. INSULT ME LIKE BIATCH\n3. Exit:')
+  
   
