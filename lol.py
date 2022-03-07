@@ -13,9 +13,7 @@ user = ""
 pass = ""
 
 
-def obtain_request(url,key,token_ssl):
-  requests.get(url,auth=(user, pass) token_ssl)
-
+#===============| Front End |===============#
 def create_menu():
   print('------------------')
   print('|INSULT GENERATOR|')
@@ -28,7 +26,11 @@ def create_menu():
     pass = input("Provide password(default:NONE")
   level_of_insult = 1
   return user_menu_input, level_of_insult*3;
-  
+
+#===============| BACK END |===============#
+def obtain_request(url,key,token_ssl):
+  requests.get(url,auth=(user, pass) token_ssl)
+
 def generate_insult(user_input,level_of_insult):
   level_of_insult = level_of_insult*user_input
   insults_output = []
@@ -38,7 +40,10 @@ def generate_insult(user_input,level_of_insult):
     insult = json_output.get('insult')
     insults_output.add(insult)
   return insults_output
-#===============| MAIN |===============#
+
+
+
+#>>>>>===============| MAIN |===============<<<<<#
 
 user_input, level_of_insult = create_menu()
 if user_input < 3:
