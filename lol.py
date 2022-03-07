@@ -52,6 +52,7 @@ def generate_insult(user_input,level_of_insult):
     json_output = json.load(api_requests_response.json())
     insult = json_output.get('insult')
     insults_output.add(insult)
+    print(insult)
   return insults_output
 
 
