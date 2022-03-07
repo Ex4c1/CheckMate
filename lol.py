@@ -49,9 +49,7 @@ def generate_insult(user_input,level_of_insult):
     insults_output.add(insult)
     print(insult)
   return insults_output
-
-
-
+ 
 #>>>>>===============| MAIN |===============<<<<<#
 user_input, level_of_insult = create_menu()
 if user_input < 3:
