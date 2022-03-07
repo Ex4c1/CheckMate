@@ -38,7 +38,7 @@ def create_menu():
     user = input("Provide username(default:NONE")
     pass = input("Provide password(default:NONE")
   level_of_insult = 1
-  return user_menu_input, level_of_insult*3;
+  return user_menu_input, user_menu_input*level_of_insult*3;
 
 #===============| BACK END |===============#
 def obtain_request(url,key,token_ssl):
