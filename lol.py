@@ -9,11 +9,12 @@ import json
 url = "https://insult.mattbas.org/api/"
 key = ""
 token_ssl = False
+user = ""
+pass = ""
+
 
 def obtain_request(url,key,token_ssl):
-  user = input("Provide username(default:NONE")
-  pass = input("Provide password(default:NONE")
-  requests.get(url,auth=($user, $pass) token_ssl)
+  requests.get(url,auth=(user, pass) token_ssl)
 
 def create_menu():
   print('------------------')
@@ -22,6 +23,9 @@ def create_menu():
   print('Choose Option:')
   print('1. INSULT ME.\n2. INSULT ME LIKE BIATCH\n3. Exit:')
   user_menu_input = input('\n\m:>')
+  if user_menu_input < 3:
+    user = input("Provide username(default:NONE")
+    pass = input("Provide password(default:NONE")
   level_of_insult = 1
   return user_menu_input, level_of_insult*3;
   
