@@ -11,12 +11,8 @@ CREATED TO INSULT PEOPLE, DON'T BE SHY, GET INSULT LIKE A MAN
 
 
 """
-
-
-
 import requests
 import json
-
 
 #===============| Basic Vars |===============#
 url = "https://insult.mattbas.org/api/"
@@ -24,7 +20,6 @@ key = ""
 token_ssl = False
 user = ""
 pass = ""
-
 
 #===============| Front End |===============#
 def create_menu():
@@ -58,7 +53,6 @@ def generate_insult(user_input,level_of_insult):
 
 
 #>>>>>===============| MAIN |===============<<<<<#
-
 user_input, level_of_insult = create_menu()
 if user_input < 3:
   generate_insult(user_input,level_of_insult)
