@@ -2,6 +2,7 @@ __VERSION__ = 1.0.0
 __AUTHORS__ = "Ex4c && NICEA"
 
 import requests
+import json
 
 
 #===============| Basic Vars |===============#
@@ -24,10 +25,12 @@ def create_menu():
   return user_menu_input
   
 def generate_insult(user_input,level_of_insult):
-  level_of_insult= level_of_insult*user_input
+  level_of_insult = level_of_insult*user_input
   for x in level_of_insult:
     
  
 
 #===============| MAIN |===============#
+
+
 api_request_reponse = obtain_request(url,key,token_ssl)
