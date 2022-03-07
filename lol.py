@@ -22,7 +22,8 @@ def create_menu():
   print('Choose Option:')
   print('1. INSULT ME.\n2. INSULT ME LIKE BIATCH\n3. Exit:')
   user_menu_input = input('\n\m:>')
-  return user_menu_input
+  level_of_insult = 1
+  return user_menu_input, level_of_insult*3;
   
 def generate_insult(user_input,level_of_insult):
   level_of_insult = level_of_insult*user_input
@@ -35,6 +36,6 @@ def generate_insult(user_input,level_of_insult):
   return insults_output
 #===============| MAIN |===============#
 
-create_menu()
-generate_insult()
+user_input, level_of_insult = create_menu()
+generate_insult(user_input,level_of_insult)
 
