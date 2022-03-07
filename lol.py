@@ -26,11 +26,15 @@ def create_menu():
   
 def generate_insult(user_input,level_of_insult):
   level_of_insult = level_of_insult*user_input
+  insults_output = []
   for x in level_of_insult:
-    
- 
-
+    api_request_reponse = obtain_request(url,key,token_ssl)
+    json_output = json.load(api_requests_response.json())
+    insults_output.add(json_output)
+  
+  return insults_output
 #===============| MAIN |===============#
 
+create_menu()
+generate_insult()
 
-api_request_reponse = obtain_request(url,key,token_ssl)
