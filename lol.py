@@ -32,7 +32,7 @@ def create_menu():
   print('|INSULT GENERATOR|')
   print('------------------')
   print('Choose Option:')
-  print('1. INSULT ME.\n2. INSULT ME LIKE BIATCH\n3. Exit:')
+  print('1. INSULT ME.\n2. INSULT ME LIKE A BIATCH\n3. Exit:')
   user_menu_input = input('\n\m:>')
   if user_menu_input < 3:
     user = input("Provide username(default:NONE")
