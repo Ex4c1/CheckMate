@@ -3,7 +3,7 @@ __AUTHORS__ = "Ex4c && NICEA"
 
 """
 CREATED TO INSULT PEOPLE, DON'T BE SHY, GET INSULT LIKE A MAN
-        {PEW PEW}
+ \%\     {PEW PEW}
  (0-0) /                           [---------------]
  \_ _==={}  ->     ->       ->     [---------------]
  / \                               [------YOU------]
