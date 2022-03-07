@@ -1,5 +1,6 @@
 __VERSION__ = 1.0.0
 __AUTHORS__ = "Ex4c && NICEA"
+__NAME__ = "POCISKATOR "+__VERSION
 
 """
 CREATED TO INSULT PEOPLE, DON'T BE SHY, GET INSULT LIKE A MAN
@@ -23,10 +24,11 @@ pass = ""
 
 #===============| Front End |===============#
 def create_menu():
-  print('------------------')
-  print('|INSULT GENERATOR|')
-  print('------------------')
-  print('Choose Option:')
+  print(__NAME__+\n)
+  print('------------------'\n)
+  print('|INSULT GENERATOR|'\n)
+  print('------------------'\n)
+  print('Choose Option:'\n\n)
   print('1. INSULT ME.\n2. INSULT ME LIKE A BIATCH\n3. Exit:')
   user_menu_input = input('\n\m:>')
   if user_menu_input < 3:
