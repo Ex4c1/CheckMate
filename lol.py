@@ -37,5 +37,7 @@ def generate_insult(user_input,level_of_insult):
 #===============| MAIN |===============#
 
 user_input, level_of_insult = create_menu()
-generate_insult(user_input,level_of_insult)
+if user_input < 3:
+  generate_insult(user_input,level_of_insult)
+
 
